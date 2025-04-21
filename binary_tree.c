@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Node structure for the binary tree
+// Node structure for the tree
 struct Node {
     int data;
     struct Node* left;
@@ -104,7 +104,7 @@ int main() {
     printf("3. Search Value\n");
     printf("4. Delete Value\n");
     printf("5. Destroy Tree\n");
-    printf("6. Exit\n");
+    
 
     while (1) {
         printf("\nEnter your choice: ");
@@ -163,16 +163,11 @@ int main() {
                 rootCreated = 0;
                 printf("Tree destroyed successfully.\n");
                 break;
-
-            case 6:
-                destroyTree(root);
-                printf("Exiting program.\n");
-                return 0;
-
+                
             default:
-                printf("Invalid choice. Enter 1 to 6.\n");
+                printf("Invalid choice. Enter 1 to 5.\n");
         }
     }
 
-    return 0;
+    return 0;
 }
